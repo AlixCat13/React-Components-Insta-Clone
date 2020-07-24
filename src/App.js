@@ -14,7 +14,7 @@ import PostHeader from './PostHeader';
 import Posts from './Posts';
 import SearchBar from './SearchBar'
 // Import the dummyData
-import 
+import dummyData from './dummy-data'
 import './App.css';
 
 const App = () => {
