@@ -14,7 +14,7 @@ import PostHeader from './PostHeader';
 import Posts from './Posts';
 import SearchBar from './SearchBar'
 // Import the dummyData
-import {dummyData} from '../dummy-data.js'
+import {dummyData} from '.../dummy-data.js'
 import './App.css';
 
 const App = () => {
@@ -42,9 +42,10 @@ const App = () => {
 
   return (
     <div className='App'>
+      <h1>This is the App Part</h1>
       {/* Add SearchBar and Posts here to render them */}
-      <SearchBar></SearchBar>
-      <Posts></Posts>
+      <SearchBar />
+      <Posts />
       {/* Check the implementation of each component, to see what props they require, if any! */}
     </div>
   );
