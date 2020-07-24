@@ -18,6 +18,7 @@ import {dummyData} from '.../dummy-data.js'
 import './App.css';
 
 const App = () => {
+  console.log('dummyData', dummyData)
   // Create a state called `posts` to hold the array of post objects, **initializing to dummyData**.
 
   const [posts, setPosts] = useState(dummyData)
@@ -36,7 +37,7 @@ const App = () => {
         - if the `id` of the post matches `postId`, return a new post object with the desired values (use the spread operator).
         - otherwise just return the post object unchanged.
      */
-
+     
      
   };
 
