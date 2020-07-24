@@ -10,6 +10,10 @@ const LikeSection = props => {
   // 🔥 Make sure the parent of LikeSection is passing the right props!
   const { likePost, numberOfLikes } = props;
 
+  const likeCounter = () => {
+    numberOfLikes(likePost + 1)
+  }
+
   return (
     <div>
       <div
@@ -24,8 +28,14 @@ const LikeSection = props => {
         </div>
       </div>
       <p className='like-number'>{numberOfLikes}</p>
+          <likeCounter label='Like!' />
     </div>
   );
+
+  const likeCounter(props)=> {
+    const {numberOfLikes, label}=props;
+    <button onClick={likeCounter}>{label}</button>
+  }
 };
 
 export default LikeSection;
