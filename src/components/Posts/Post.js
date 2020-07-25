@@ -6,7 +6,7 @@ import Posts from './Posts';
 
 const Post = props => {
   // 🔥 Make sure the parent of Post is passing the right props!
-  const { post, likePost } = props;
+  const { post, likePost, key } = props;
 
   return (
     <div className='post-border'>
@@ -22,9 +22,9 @@ const Post = props => {
         />
       </div>
       {/* Is LikeSection getting all the props it needs to work correctly? */}
-      <LikeSection likePost={() => likePost(post.id)} numberOfLikes={post.likes} />
+      <LikeSection likePost={() => likePost(post.id)} numberOfLikes={post.likes} key={key} />
       {/* Comments also wants its props! */}
-      <Comments comments={post.comments} />
+      <Comments comments={post.comments} key={key} />
     </div>
   );
 };
