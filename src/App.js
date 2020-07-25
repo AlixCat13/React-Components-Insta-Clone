@@ -15,7 +15,7 @@ import dummyData from './dummy-data.js'
 import './App.css';
 
 const App = () => {
-  console.log('dummyData', dummyData)
+  
   // Create a state called `posts` to hold the array of post objects, **initializing to dummyData**.
 
   const [posts, setPosts] = useState(dummyData)

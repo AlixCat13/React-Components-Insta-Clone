@@ -13,8 +13,7 @@ const Posts = (props) => {
       {props.data.map(data => {
         return <Post userName = {posts[data].username} thumbnailURL = {posts[data].thumbnailURL} imageURL = {posts[data].imageURL} />
       })
-    }
-    
+    } 
      
     </div>
   );
