@@ -8,13 +8,10 @@
 import React, {useState} from 'react';
 
 // Import the Posts (plural!) and SearchBar components, since they are used inside App component
-import LikeSection from './LikeSection';
-import Post from './Post';
-import PostHeader from './PostHeader';
-import Posts from './Posts';
-import SearchBar from './SearchBar'
+import Posts from './components/Posts/Posts.js';
+import SearchBar from './components/SearchBar/SearchBar.js'
 // Import the dummyData
-import {dummyData} from '.../dummy-data.js'
+import dummyData from './dummy-data.js'
 import './App.css';
 
 const App = () => {

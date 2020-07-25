@@ -32,10 +32,10 @@ const LikeSection = props => {
     </div>
   );
 
-  const likeCounter(props)=> {
-    const {numberOfLikes, label}=props;
-    <button onClick={likeCounter}>{label}</button>
-  }
+  // const likeCounter(props)=> {
+  //   const {numberOfLikes, label}=props;
+    
+  // }
 };
 
 export default LikeSection;

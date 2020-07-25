@@ -10,8 +10,12 @@ const Posts = (props) => {
     <div className='posts-container-wrapper'>
       {/* Map through the posts array returning a Post component at each iteration */}
       {/* Check the implementation of Post to see what props it requires! */}
-      {props.data.map(posts) }
-      console.log(props.data.map(posts))
+      {props.data.map(data => {
+        return <Post userName = {posts[data].username} thumbnailURL = {posts[data].thumbnailURL} imageURL = {posts[data].imageURL} />
+      })
+    }
+    
+     
     </div>
   );
 };
