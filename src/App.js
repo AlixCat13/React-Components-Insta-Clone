@@ -15,8 +15,8 @@ import dummyData from './dummy-data.js'
 import './App.css';
 
 const App = () => {
-  
-  // Create a state called `posts` to hold the array of post objects, **initializing to dummyData**.
+  console.log('dummyData', dummyData)
+
 
   const [posts, setPosts] = useState(dummyData)
 
@@ -24,6 +24,15 @@ const App = () => {
   // To make the search bar work (which is stretch) we'd need another state to hold the search term.
 
   const likePost = postId => {
+      const newPosts = posts.map(post => {
+        if (post.id === postId) {
+          post.likes += 1
+        }
+        return posts
+      })
+
+      setPosts(newPosts);
+                
     /*
       This function serves the purpose of increasing the number of likes by one, of the post with a given id.
       The state of the app lives at the top of the React tree, but it wouldn't be fair for nested components not to be able to change state!
@@ -42,8 +51,8 @@ const App = () => {
     <div className='App'>
       <h1>This is the App Part</h1>
       {/* Add SearchBar and Posts here to render them */}
-      <SearchBar />
-      <Posts />
+      <Posts likePost = {likePost}  posts = {posts}/>
+      <SearchBar />      
       {/* Check the implementation of each component, to see what props they require, if any! */}
     </div>
   );

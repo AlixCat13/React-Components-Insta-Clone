@@ -51,3 +51,9 @@ The completion of these questions is mandatory for MVP. However, passing the qui
 
 - [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
 - [ ] Fill out your module retrospective form [here](https://forms.lambdaschool.com/module-retrospective) with a link to your TL
+
+
+## Steps I've Already Completed
+
+Apps.js
+  // Create a state called `posts` to hold the array of post objects, **initializing to dummyData**.
