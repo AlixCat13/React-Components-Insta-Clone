@@ -1,4 +1,4 @@
-# React-Components-Insta-Clone
+React-Components-Insta-Clone
 
 ## Composing React Components and Passing Data Via Props
 
@@ -51,3 +51,19 @@ The completion of these questions is mandatory for MVP. However, passing the qui
 
 - [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
 - [ ] Fill out your module retrospective form [here](https://forms.lambdaschool.com/module-retrospective) with a link to your TL
+
+
+## Steps I've Already Completed
+
+Apps.js
+  - Create a state called `posts` to hold the array of post objects, **initializing to dummyData**.
+  - Import the state hook
+  - Import the Posts (plural!) and SearchBar components, since they are used inside App component
+  - Import the dummyData
+  - This state is the source of truth for the data inside the app. You won't be needing dummyData anymore.
+  - Invoke `setPosts` and pass as the new state the invocation of `posts.map`.
+  - The callback passed into `map` performs the following logic:
+  - if the `id` of the post matches `postId`, return a new post object with the desired values (use the spread operator).
+  - otherwise just return the post object unchanged.
+  - Add SearchBar and Posts here to render them 
+  - Check the implementation of each component, to see what props they require, if any! 
